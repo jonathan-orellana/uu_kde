@@ -22,12 +22,12 @@
 
 - a. Compute the uniform-kernel KDE, `f_hat_h(x)`, at `x = 6.0`, `x = 6.5`, `x = 7.0`, `x = 8.0`, and `x = 8.5`.
 - b. Compute the Gaussian-kernel KDE at the same five values of `x`, using the same `h = 1.5`.
-- c. Your part (a) values should jump abruptly between some of these five points, while your part (b) values should change smoothly. Identify where the biggest jump in (a) happens, and explain in terms of the two kernel _shapes_ -- not just "one is smoother" -- why that jump exists in the uniform case but not the Gaussian case.
+- c. Your part (a) values should jump abruptly between some of these five points, while your part (b) values should change smoothly. Identify where the biggest jump in (a) happens, and explain in terms of the two kernel *shapes* -- not just "one is smoother" -- why that jump exists in the uniform case but not the Gaussian case.
 - d. Why might you prefer one kernel over the other in practice?
 
 **Problem 4.** Load `./data/heart_failure_clinical_records_dataset.csv`.
 
 - a. Plot a
-- kernel density estimate of `ejection_fraction`.
+-  kernel density estimate of `ejection_fraction`.
 - b. Use Pandas' `df.sample(frac=1.0, replace=True)` to resample the data 15 times with replacement, plotting the kernel density estimtes for each sample.
 - c. For what values of `ejection_fraction` is the original plot reliable? For which values is there noticeable variation in your plots of the resampled data?
